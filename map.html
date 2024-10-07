@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BalMitra</title>
+
+    <!-- Link icon logo(favicon) in title bar -->
+    <link rel = "icon" href = "assets/title-icon.png" type = "image/x-icon">
+
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!--  Link Stylesheets -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
+
+    <!-- Link jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Vidaloka&family=Amaranth&display=swap" rel="stylesheet">
+
+    <!-- Link fontawesome -->
+    <script src="https://kit.fontawesome.com/bb0d234825.js"></script>
+  </head>
+<body>
+
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand link" href="index.html">
+            <img src="assets/icon.png" alt=".." width="30" height="30" class="mx-3 align-text-center">
+                BalMitra
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mb-2 mb-md-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active link" aria-current="page" href="/index.html">Home</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#about-us">About Us</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </main>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.877133408797!2d75.56265937489268!3d26.84385996304705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4850e05bee9b%3A0x1b8d67402d4eb863!2sManipal%20University%20Jaipur!5e0!3m2!1sen!2sin!4v1712206572109!5m2!1sen!2sin" width=100% height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+
+    <!-- About Us -->
+    <div class="container-fluid p-0" id="about-us">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <h1 class="text-light">About Us</h1>
+          <p class="text-muted">BalMitra exists to alleviate poverty by enabling the world to give donations for child education and other different problems.</p>
+          <p class="pt-2 text-muted">Copyright © All Rights Reserved</p>
+          <p class="pt-2 text-light">Developed with <i class="fas fa-heart beat"></i> by Mohit and Aditya</p>
+        </div>
+        <div class="col-md-5">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col">
+              <div class="input-group pr-5">
+                <input type="email" class="form-control bg-dark text-white" placeholder="To be made available soon..." id="email" name="email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let Us be social</p>
+          <div class="column">
+            <a href="https://www.instagram.com/vardhanaditya?igsh=MWc5ZGg2bzhiMWthcQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/AdiVarPry2001?t=o8nIdx9SNWpG74iG7ab94A&s=08"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:mohit.219302293@muj.manipal.edu">mohit.219302293@muj.manipal.edu</a>
+            <a href="https://www.instagram.com/vardhanaditya?igsh=MWc5ZGg2bzhiMWthcQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/AdiVarPry2001?t=o8nIdx9SNWpG74iG7ab94A&s=08"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:adityavardhapry2001@gmail.com">adityavardhapry2001@gmail.com</a>
+            <div class="extra text-muted">Page Icon made by
+              <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </footer>
+
+    <!-- inline javascript code -->
+
+    <script type="text/javascript">
+      /** Sticky navigation */
+
+      let navbar = $(".navbar");
+
+      $(window).scroll(function(){
+          let oTop = $(".our-work").offset().top-window.innerHeight;
+          if($(window).scrollTop()>oTop){
+              navbar.addClass("sticky");
+          }
+          else{
+              navbar.removeClass("sticky");
+          }
+      });
+
+      /** Counter animation */
+
+      let nCount = function(selector){
+          $(selector).each(function(){
+              $(this).animate({
+                  Counter:$(this).text()
+              },
+              {
+                  duration: 4000,
+                  easing: "swing",
+                  step: function(value){
+                      $(this).text(Math.ceil(value));
+                  }
+              }
+              );
+          });
+      };
+
+      let a=0;
+      $(window).scroll(function(){
+          let oTop = $(".our-work").offset().top-window.innerHeight;
+          if(a==0 && $(window).scrollTop()>=oTop){
+              a++;
+              nCount(".rect > h1")
+          }
+      });
+
+      /** Prevent content jump when sticky navbar appears */
+
+      function jumpsPrevent() {
+        stickyHeight = navbar.innerHeight();
+        navbar.css({"margin-bottom":"-" + stickyHeight + "px"});
+        navbar.next().css({"padding-top": + stickyHeight + "px"});
+      };
+      jumpsPrevent(); // Run.
+
+      // Function trigger:
+      $(window).resize(function(){
+        jumpsPrevent();
+      });
+
+    </script>
+
+</body>
+</html>
